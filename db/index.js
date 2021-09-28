@@ -4,23 +4,23 @@ var today = new Date();
 var now = today.toISOString().slice(0, 19).replace('T', ' ');
 var date = '2021-08-02 12:12:12';
 
-const pool = mysql.createPool({
-    connectionLimit : 10,
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    database:'rentperty',
-    port: '3306'
-})
-
 // const pool = mysql.createPool({
 //     connectionLimit : 10,
-//     host: 'us-cdbr-east-04.cleardb.com',
-//     user: 'b90d12aad36973',
-//     password: '898af45a',
-//     database:'heroku_8ac8515a73a607a',
+//     host: 'localhost',
+//     user: 'root',
+//     password: 'password',
+//     database:'rentperty',
 //     port: '3306'
 // })
+
+const pool = mysql.createPool({
+    connectionLimit : 10,
+    host: 'us-cdbr-east-04.cleardb.com',
+    user: 'b5eee8daf2670d',
+    password: '45d6b9ad',
+    database:'heroku_dfcfd85eed3cac5',
+    port: '3306'
+})
 
 let rentpertydb ={};
 
